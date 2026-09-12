@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#273e2b">
+  <meta name="description" content="Ruta digital de biodiversidad y voluntariado ambiental en Viña Polkura, Marchigüe.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23273e2b'/%3E%3Cpath d='M15 42c14-2 22-10 34-25-1 16-11 31-29 31' fill='%23d8bd72'/%3E%3Cpath d='M24 43c3-10 10-17 20-22' fill='none' stroke='%23fff8e8' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <title>Polkura Natural · Ruta digital</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">P</span>
+      <span>Polkura <em>Natural</em></span>
+    </a>
+    <a class="small-link" href="#ruta">Explorar ruta</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-image" role="img" aria-label="Viñedo de Polkura entre cerros de Marchigüe"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Marchigüe · Valle de Colchagua</p>
+        <h1>Una ruta para mirar<br><i>lo que siempre estuvo ahí.</i></h1>
+        <p class="intro">Un recorrido digital para descubrir, registrar y cuidar la biodiversidad que convive con el viñedo.</p>
+        <a class="primary-button" href="#ruta">Comenzar recorrido <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-note"><span>Proyecto de voluntariado</span><strong>7 días · 5 estaciones</strong></div>
+    </section>
+
+    <section class="purpose section-pad">
+      <div>
+        <p class="eyebrow dark">El propósito</p>
+        <h2>Conocer para<br><i>proteger.</i></h2>
+      </div>
+      <div class="purpose-copy">
+        <p>Esta guía transforma una semana de observación en terreno en un recurso que queda para Polkura: fotografías, registros de flora y aves, plantaciones y una ruta fácil de recorrer desde el celular.</p>
+        <div class="stats">
+          <div><strong>01</strong><span>guía digital</span></div>
+          <div><strong>05</strong><span>estaciones</span></div>
+          <div><strong>∞</strong><span>nuevos registros</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="route section-pad" id="ruta">
+      <div class="section-heading">
+        <div><p class="eyebrow light">La experiencia</p><h2>Ruta <i>Polkura Natural</i></h2></div>
+        <p>Selecciona una estación para ver qué se observará, qué se registrará y qué aporte dejará la voluntaria.</p>
+      </div>
+      <div class="route-grid">
+        <article class="station station-featured">
+          <span class="number">01</span><div class="station-icon">✦</div>
+          <p>Inicio del recorrido</p><h3>Mirador del<br>paisaje</h3>
+          <button class="station-button" data-modal="mirador">Ver estación</button>
+        </article>
+        <article class="station"><span class="number">02</span><div class="station-icon">⌁</div><p>Flora</p><h3>Suculentas y<br>especies nativas</h3><button class="station-button" data-modal="flora">Ver estación</button></article>
+        <article class="station"><span class="number">03</span><div class="station-icon">⌇</div><p>Agua</p><h3>Vida junto a<br>los tranques</h3><button class="station-button" data-modal="tranques">Ver estación</button></article>
+        <article class="station"><span class="number">04</span><div class="station-icon">⌁</div><p>Avifauna</p><h3>Aves que visitan<br>Polkura</h3><button class="station-button" data-modal="aves">Ver estación</button></article>
+        <article class="station"><span class="number">05</span><div class="station-icon">✣</div><p>Restitución</p><h3>Nuevas<br>plantaciones</h3><button class="station-button" data-modal="plantaciones">Ver estación</button></article>
+      </div>
+    </section>
+
+    <section class="fieldwork section-pad" id="voluntariado">
+      <div class="fieldwork-copy">
+        <p class="eyebrow dark">Plan listo para ejecutar</p>
+        <h2>Siete días,<br><i>un aporte real.</i></h2>
+        <p>El trabajo combina observación, fotografía, señalización y organización digital. Cada jornada termina con un resultado concreto.</p>
+        <button class="outline-button" id="show-plan">Ver plan día por día</button>
+      </div>
+      <div class="days" id="days">
+        <div><b>Día 1</b><span>Recorrido y selección de los cinco puntos</span></div>
+        <div><b>Día 2</b><span>Marcación simple del sendero</span></div>
+        <div><b>Día 3</b><span>Fotografías y fichas de flora</span></div>
+        <div><b>Día 4</b><span>Observación de aves en los tranques</span></div>
+        <div><b>Día 5</b><span>Plantación y registro inicial</span></div>
+        <div><b>Día 6</b><span>Organización y revisión de fichas</span></div>
+        <div><b>Día 7</b><span>Carga digital, QR y entrega final</span></div>
+      </div>
+    </section>
+
+    <section class="logbook section-pad" id="registro">
+      <div class="section-heading light-bg">
+        <div><p class="eyebrow dark">Bitácora de terreno</p><h2>Registra un<br><i>hallazgo.</i></h2></div>
+        <p>Esta ficha funciona desde el celular y guarda los registros en el dispositivo mientras se realiza el levantamiento.</p>
+      </div>
+      <form id="observation-form" class="observation-form">
+        <label>Tipo<select id="type" required><option value="">Seleccionar</option><option>Flora nativa</option><option>Suculenta</option><option>Ave</option><option>Plantación</option><option>Otro hallazgo</option></select></label>
+        <label>Nombre o descripción<input id="name" required placeholder="Ej.: ave pequeña de pecho rojo"></label>
+        <label>Estación<select id="station" required><option value="">Seleccionar</option><option>1 · Mirador</option><option>2 · Flora</option><option>3 · Tranques</option><option>4 · Aves</option><option>5 · Plantaciones</option></select></label>
+        <label>Observaciones<textarea id="notes" rows="3" placeholder="Hora, cantidad, comportamiento o detalles"></textarea></label>
+        <button class="primary-button green" type="submit">Guardar hallazgo</button>
+      </form>
+      <div class="saved-wrap">
+        <div class="saved-title"><h3>Mis registros</h3><button id="clear-records" type="button">Borrar todos</button></div>
+        <div id="records" class="records"><p class="empty">Aún no hay hallazgos guardados en este dispositivo.</p></div>
+      </div>
+    </section>
+
+    <section class="qr-section section-pad" id="qr">
+      <div class="qr-copy">
+        <p class="eyebrow dark">Acceso al recorrido</p>
+        <h2>Escanea.<br><i>Observa. Cuida.</i></h2>
+        <p>Este código abre Polkura Natural desde cualquier celular. Puede imprimirse en el cartel de inicio del sendero para que la guía quede disponible durante y después del voluntariado.</p>
+        <a class="outline-button qr-download" id="qr-download" href="#" target="_blank" rel="noreferrer">Abrir QR para imprimir</a>
+      </div>
+      <div class="qr-card">
+        <img id="qr-image" src="" alt="Código QR para abrir Polkura Natural">
+        <div><strong>POLKURA NATURAL</strong><span>Descubre la biodiversidad del recorrido</span></div>
+      </div>
+    </section>
+
+    <section class="delivery section-pad" id="entrega">
+      <p class="eyebrow light">Producto final</p>
+      <h2>Lo que queda<br><i>después del voluntariado.</i></h2>
+      <div class="delivery-grid">
+        <div><span>01</span><h3>Ruta señalizada</h3><p>Cinco puntos sencillos y reconocibles dentro del recorrido.</p></div>
+        <div><span>02</span><h3>Guía digital</h3><p>Un sitio adaptable al celular con fichas, fotografías y mapa.</p></div>
+        <div><span>03</span><h3>Registro vivo</h3><p>Una base inicial de flora, aves y nuevas plantaciones para seguir ampliando.</p></div>
+        <div><span>04</span><h3>Acceso por QR</h3><p>Un código en el inicio del sendero abre esta experiencia digital.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><span class="brand-mark">P</span><h2>Polkura <i>Natural</i></h2></div>
+    <p>Hijuela 7, Chequén, Marchigüe<br>Región de O’Higgins · Chile<br><a href="https://polkura.cl/" target="_blank" rel="noreferrer">Sitio oficial de Viña Polkura ↗</a></p>
+    <p class="credit">Propuesta digital de voluntariado ambiental · 2026</p>
+  </footer>
+
+  <dialog id="info-dialog">
+    <button class="dialog-close" aria-label="Cerrar">×</button>
+    <p class="eyebrow dark" id="dialog-kicker"></p>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-text"></p>
+    <div class="dialog-task"><b>Registro esperado</b><span id="dialog-task"></span></div>
+  </dialog>
+  <div class="toast" id="toast" role="status">Hallazgo guardado</div>
+  <script src="app.js"></script>
+</body>
+</html>
