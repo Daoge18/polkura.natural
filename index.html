@@ -13,10 +13,9 @@
   <title>Polkura Natural · Ruta digital</title>
 </head>
 <body>
-  <header class="topbar">
+<header class="topbar">
     <a class="brand" href="#inicio" aria-label="Ir al inicio">
-      <span class="brand-mark">P</span>
-      <span>Polkura <em>Natural</em></span>
+      <img src="imagenes/logo.png" alt="Viña Polkura" style="height: 32px; width: auto; display: block;">
     </a>
     <a class="small-link" href="#ruta">Explorar ruta</a>
   </header>
@@ -67,54 +66,62 @@
       </div>
     </section>
 
-    <section class="fieldwork section-pad" id="voluntariado">
+<section class="fieldwork section-pad" id="voluntariado">
       <div class="fieldwork-copy">
-        <p class="eyebrow dark">Plan listo para ejecutar</p>
-        <h2>Siete días,<br><i>un aporte real.</i></h2>
-        <p>El trabajo combina observación, fotografía, señalización y organización digital. Cada jornada termina con un resultado concreto.</p>
-        <button class="outline-button" id="show-plan">Ver plan día por día</button>
+        <p class="eyebrow dark">Plan corporativo de implementación</p>
+        <h2>Siete días,<br><i>una plataforma operativa.</i></h2>
+        <p>El levantamiento de datos está estructurado en una semana de trabajo. Cada jornada tiene objetivos técnicos precisos para alimentar la base de datos central de Viña Polkura.</p>
+        <button class="outline-button" id="show-plan">Ver fases de implementación</button>
       </div>
       <div class="days" id="days">
-        <div><b>Día 1</b><span>Recorrido y selección de los cinco puntos</span></div>
-        <div><b>Día 2</b><span>Marcación simple del sendero</span></div>
-        <div><b>Día 3</b><span>Fotografías y fichas de flora</span></div>
-        <div><b>Día 4</b><span>Observación de aves en los tranques</span></div>
-        <div><b>Día 5</b><span>Plantación y registro inicial</span></div>
-        <div><b>Día 6</b><span>Organización y revisión de fichas</span></div>
-        <div><b>Día 7</b><span>Carga digital, QR y entrega final</span></div>
+        <div data-day="dia1" style="cursor: pointer;"><b>Día 1</b><span>Selección de puntos de control</span></div>
+        <div data-day="dia2" style="cursor: pointer;"><b>Día 2</b><span>Delimitación del sendero</span></div>
+        <div data-day="dia3" style="cursor: pointer;"><b>Día 3</b><span>Catastro de flora nativa</span></div>
+        <div data-day="dia4" style="cursor: pointer;"><b>Día 4</b><span>Monitoreo de avifauna</span></div>
+        <div data-day="dia5" style="cursor: pointer;"><b>Día 5</b><span>Gestión de plantaciones</span></div>
+        <div data-day="dia6" style="cursor: pointer;"><b>Día 6</b><span>Auditoría de datos</span></div>
+        <div data-day="dia7" style="cursor: pointer;"><b>Día 7</b><span>Despliegue y entrega final</span></div>
       </div>
     </section>
 
     <section class="logbook section-pad" id="registro">
       <div class="section-heading light-bg">
         <div><p class="eyebrow dark">Bitácora de terreno</p><h2>Registra un<br><i>hallazgo.</i></h2></div>
-        <p>Esta ficha funciona desde el celular y guarda los registros en el dispositivo mientras se realiza el levantamiento.</p>
+        <p>Esta ficha funciona desde cualquier dispositivo y guarda los registros en una base de datos centralizada donde puedes revisar los hallazgos en cualquier momento.</p>
       </div>
       <form id="observation-form" class="observation-form">
+        <label>Tu nombre<input id="volunteer" required placeholder="Ej.: Diego L."></label>
         <label>Tipo<select id="type" required><option value="">Seleccionar</option><option>Flora nativa</option><option>Suculenta</option><option>Ave</option><option>Plantación</option><option>Otro hallazgo</option></select></label>
         <label>Nombre o descripción<input id="name" required placeholder="Ej.: ave pequeña de pecho rojo"></label>
         <label>Estación<select id="station" required><option value="">Seleccionar</option><option>1 · Mirador</option><option>2 · Flora</option><option>3 · Tranques</option><option>4 · Aves</option><option>5 · Plantaciones</option></select></label>
         <label>Observaciones<textarea id="notes" rows="3" placeholder="Hora, cantidad, comportamiento o detalles"></textarea></label>
+        <label>Fotografía del hallazgo
+          <input type="file" id="photo" accept="image/*" capture="environment">
+        </label>
+        
+        <div style="background: #fdf5d3; border-left: 4px solid #d8bd72; padding: 12px; margin: 10px 0 20px; border-radius: 4px;">
+          <p style="margin:0; font-size: 0.85rem; color: #5a4b1d; line-height: 1.5;"><b>📡 Nota de conexión:</b> Si estás en un sector del viñedo sin señal de internet, toma la foto con tu cámara y guarda tus anotaciones. Usa esta web cuando vuelvas a tener cobertura estable para evitar errores al subir la imagen.</p>
+        </div>
         <button class="primary-button green" type="submit">Guardar hallazgo</button>
       </form>
       <div class="saved-wrap">
-        <div class="saved-title"><h3>Mis registros</h3><button id="clear-records" type="button">Borrar todos</button></div>
-        <div id="records" class="records"><p class="empty">Aún no hay hallazgos guardados en este dispositivo.</p></div>
+        <div class="saved-title"><h3>Registros</h3><button id="clear-records" type="button">Borrar todos</button></div>
+        <div id="records" class="records"><p class="empty">Aún no hay hallazgos guardados en esta base de datos.</p></div>
       </div>
     </section>
 
     <section class="qr-section section-pad" id="qr">
-      <div class="qr-copy">
-        <p class="eyebrow dark">Acceso al recorrido</p>
-        <h2>Escanea.<br><i>Observa. Cuida.</i></h2>
-        <p>Este código abre Polkura Natural desde cualquier celular. Puede imprimirse en el cartel de inicio del sendero para que la guía quede disponible durante y después del voluntariado.</p>
-        <a class="outline-button qr-download" id="qr-download" href="#" target="_blank" rel="noreferrer">Abrir QR para imprimir</a>
-      </div>
-      <div class="qr-card">
-        <img id="qr-image" src="" alt="Código QR para abrir Polkura Natural">
-        <div><strong>POLKURA NATURAL</strong><span>Descubre la biodiversidad del recorrido</span></div>
-      </div>
-    </section>
+          <div class="qr-copy">
+            <p class="eyebrow dark">Plataforma de terreno</p>
+            <h2>Escanea.<br><i>Registra. Protege.</i></h2>
+            <p>Este código de acceso conecta tu dispositivo con la base de datos central de Viña Polkura. Escanéalo en el punto de inicio del recorrido para activar tu bitácora digital, acceder a las fichas técnicas y documentar la biodiversidad en tiempo real.</p>
+            <a class="outline-button qr-download" id="qr-download" href="#" target="_blank" rel="noreferrer">Abrir QR para imprimir</a>
+          </div>
+          <div class="qr-card">
+            <img id="qr-image" src="" alt="Código QR para abrir Polkura Natural">
+            <div><strong>POLKURA NATURAL</strong><span>Plataforma oficial de registro y biodiversidad</span></div>
+          </div>
+        </section>
 
     <section class="delivery section-pad" id="entrega">
       <p class="eyebrow light">Producto final</p>
@@ -128,14 +135,18 @@
     </section>
   </main>
 
-  <footer>
-    <div><span class="brand-mark">P</span><h2>Polkura <i>Natural</i></h2></div>
+<footer>
+    <div style="margin-bottom: 16px;">
+      <img src="imagenes/logo.png" alt="Viña Polkura" style="height: 48px; width: auto; filter: grayscale(1) brightness(2);">
+    </div>
     <p>Hijuela 7, Chequén, Marchigüe<br>Región de O’Higgins · Chile<br><a href="https://polkura.cl/" target="_blank" rel="noreferrer">Sitio oficial de Viña Polkura ↗</a></p>
-    <p class="credit">Propuesta digital de voluntariado ambiental · 2026</p>
+    <p class="credit">Plataforma de Biodiversidad y Voluntariado · Viña Polkura 2026</p>
   </footer>
-
   <dialog id="info-dialog">
     <button class="dialog-close" aria-label="Cerrar">×</button>
+    <div style="width: 100%; height: 220px; border-radius: 8px; overflow: hidden; margin-bottom: 24px; background: #e8eadf;">
+      <img id="dialog-image" src="" alt="Fotografía de la estación" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
     <p class="eyebrow dark" id="dialog-kicker"></p>
     <h2 id="dialog-title"></h2>
     <p id="dialog-text"></p>

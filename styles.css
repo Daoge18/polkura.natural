@@ -4,3 +4,13 @@
 @media(max-width:900px){.route-grid{grid-template-columns:1fr 1fr}.station{border-bottom:1px solid var(--line);min-height:300px}.station:last-child{grid-column:1/-1}.delivery-grid{grid-template-columns:1fr 1fr}.purpose,.fieldwork,.section-heading,.qr-section{grid-template-columns:1fr}.section-heading{align-items:start}.records{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.topbar{height:68px}.small-link{font-size:.75rem}.hero{min-height:calc(100svh - 68px)}.hero-content{padding-bottom:118px}.hero-note{left:22px;right:auto;bottom:30px}.purpose,.fieldwork{gap:50px}.stats{gap:8px}.route-grid{grid-template-columns:1fr}.station,.station:last-child{grid-column:auto;min-height:250px;border-right:0}.station:hover{transform:none}.observation-form{grid-template-columns:1fr}.records,.delivery-grid{grid-template-columns:1fr}.delivery-grid>div{min-height:180px}.delivery-grid h3{margin-top:35px}.qr-card{grid-template-columns:1fr;transform:none}.qr-card img{max-width:240px;margin:auto}.qr-card div{text-align:center}footer{grid-template-columns:1fr}.credit{grid-column:auto}.days div{grid-template-columns:72px 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+/* Efecto hover interactivo para los días del plan */
+.days div[data-day] {
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+  border-radius: 6px;
+}
+
+.days div[data-day]:hover {
+  background-color: #e8eadf; /* Un tono sutil para resaltar la fila */
+  padding-left: 12px; /* Da un pequeño y elegante salto hacia la derecha */
+}
