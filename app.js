@@ -4,35 +4,35 @@ const details={
     title:"Mirador del paisaje",
     text:"Este punto elevado ofrece una vista panorámica inigualable del viñedo y su entorno. Aquí se aprecia cómo los cuarteles se adaptan a la topografía ondulada de Marchigüe. El objetivo es comprender la magnitud del terreno, la influencia del clima en el secano costero y cómo la producción vitivinícola coexiste armónicamente con la geografía natural del Valle de Colchagua.",
     task:"Fotografía panorámica, ubicación del punto y una descripción breve del entorno.",
-    image:"imagenes/mirador.png"
+    image:"mirador.png"
   },
   flora:{
     kicker:"Estación 02 · Flora",
     title:"Suculentas y especies nativas",
     text:"El secano costero exige resiliencia. En este sector observaremos de cerca las adaptaciones fascinantes de las suculentas y especies nativas que sobreviven con escasa humedad. Aprenderemos a identificar sus formas y colores, entendiendo el rol vital que juegan en la retención de suelos y el equilibrio del ecosistema local de la viña.",
     task:"Fotografías de detalle y entorno, nombre común si se conoce, ubicación y característica visible.",
-    image:"imagenes/especie.png"
+    image:"especie.png"
   },
   tranques:{
     kicker:"Estación 03 · Agua",
     title:"Vida junto a los tranques",
     text:"Los tranques son mucho más que reservas para el riego; son oasis que atraen y sustentan vida. Este es un punto de observación respetuosa donde documentaremos cómo el agua se convierte en un centro de encuentro silvestre, manteniendo siempre una distancia prudente para no intervenir en sus zonas naturales de descanso y alimentación.",
     task:"Fecha, hora, clima, especies o actividad observada y registro fotográfico cuando sea posible.",
-    image:"imagenes/tranques.jpg"
+    image:"tranques.jpg"
   },
   aves:{
     kicker:"Estación 04 · Avifauna",
     title:"Aves que visitan Polkura",
     text:"El viñedo es sobrevolado constantemente por especies fundamentales para el control de plagas y la biodiversidad. Mediante observación silenciosa en horarios estratégicos, construiremos un listado de la avifauna. Documentar sus conductas y rutas de vuelo nos ayuda a medir de manera directa la salud del entorno natural.",
     task:"Nombre o descripción, cantidad aproximada, conducta, horario y fotografía o audio, si es posible.",
-    image:"imagenes/aves.png"
+    image:"aves.png"
   },
   plantaciones:{
     kicker:"Estación 05 · Restitución",
     title:"Nuevas plantaciones",
     text:"La tierra siempre devuelve lo que se le entrega. En este sector registraremos los esfuerzos de restitución mediante especies nativas plantadas. Haremos un seguimiento de su crecimiento, necesidades de riego y cuidados posteriores, dejando un legado tangible de conservación forestal que opera en paralelo a la logística de producción.",
     task:"Especie, fecha, ubicación, fotografía inicial, riego y cuidados acordados con la viña.",
-    image:"imagenes/plantacion.png"
+    image:"plantacion.png"
   }
 };
 
